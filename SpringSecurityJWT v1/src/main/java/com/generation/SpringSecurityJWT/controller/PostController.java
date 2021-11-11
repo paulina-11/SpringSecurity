@@ -18,9 +18,10 @@ public class PostController {
     }
 
     @PostMapping
-    public Post post(@RequestBody Post post) {
+    public Post save(@RequestBody Post post) {
         return postService.save(post);
     }
+
 
 
     @GetMapping("/{id}")
